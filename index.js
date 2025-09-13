@@ -9,7 +9,7 @@ const MongoStore = require('connect-mongo');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const ATLANTIC_API_KEY = "S4WwHEmudyb4PJuTPlgK8813eeDGA6m6teZULR8bdSE8ETqG1awh8JlgjajawglASwFt0ThSQudPWpRFc61X4cfYFuTgXBafczoT";
+const ATLANTIC_API_KEY = "ZansuCUc7HuM0g0mbr6Xiiw1aYvI7wHPzGD8Thftx7zJs6oHMcP31t6dOrx8ipwzo8ndmBKd6d0LSDT87uUY5v4g24Yhn2GH2XJD";
 const ATLANTIC_BASE_URL = "https://atlantich2h.com";
 
 const transactions = {};
@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-const mongoURI = 'mongodb+srv://playmusic:playmusic@cluster0.a7fx9x1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const mongoURI = 'mongodb+srv://zanssxploit:pISqUYgJJDfnLW9b@cluster0.fgram.mongodb.net/virtual_db?retryWrites=true&w=majority';
 
 mongoose.connect(mongoURI, {
   useNewUrlParser: true,
@@ -264,5 +264,6 @@ app.get('*', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server berjalan di http://localhost:${PORT}`);
 });
+
 
 
